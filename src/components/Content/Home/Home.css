@@ -1,0 +1,13 @@
+.home-wrap {
+	/* color: #61dafb; */
+	text-align: center;
+}
+.code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+	background: rgb(40, 44, 52);
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	overflow: auto;
+	padding: 15px 15px 0;
+	text-align: left;
+}
