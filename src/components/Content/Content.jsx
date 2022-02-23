@@ -1,6 +1,12 @@
 import React from 'react'
 import { Layout, Breadcrumb } from 'antd';
 import Home from './Home/Home';
+import { Routes, Route } from "react-router-dom";
+import Component from './Component/Component';
+import propsData from '../Data/PropsData';
+import stateData from '../Data/StateData';
+import lifeCycleData from '../Data/LifeCycleData';
+import ConstructorContent from './ConstructorContent/Constructor';
 const { Content } = Layout;
 
 const ContentApp = () => {
@@ -12,7 +18,16 @@ const ContentApp = () => {
 				<Breadcrumb.Item>App</Breadcrumb.Item>
 			</Breadcrumb>
 			<div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-				<Home />
+
+				<Routes>
+					<Route path={'/home'} element={<Home />} />
+					<Route path={'/component'} element={<Component />} />
+					<Route path={'/props'} element={<ConstructorContent textContent={propsData} />} />
+					<Route path={'/state'} element={<ConstructorContent textContent={stateData} />} />
+					<Route path={'/lifeCycle'} element={<ConstructorContent textContent={lifeCycleData} />} />
+				</Routes>
+
+
 			</div>
 		</Content>
 	)
