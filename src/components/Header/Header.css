@@ -3,9 +3,15 @@
 	margin: 0 20px;
 }
 .App-logo {
-	height: 8vmin;
+	height: 100%;
+	width: 100%;
 	pointer-events: none;
 	margin: 0 auto;
+}
+
+header ul.ant-menu-overflow {
+	justify-content: right;
+	padding-right: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
