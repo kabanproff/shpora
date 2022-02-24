@@ -33,7 +33,7 @@ function Welcome(props) {
 			`
 		},
 		{
-			text: 'Для классовых компонентов используйте this.props.children:',
+			text: 'Для классовых компонентов используем this.props.children:',
 			code: `
 class Welcome extends React.Component {
 	render() {

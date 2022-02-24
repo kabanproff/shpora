@@ -1,9 +1,9 @@
-import { Divider, Image, Typography } from "antd"
+import { Divider, Image, Typography, List } from "antd"
+import { CaretRightOutlined } from '@ant-design/icons'
 import CodeText from "./CodeText";
 const { Paragraph, Title } = Typography;
 
 function BlockText({ blockTexts }) {
-	// console.log(blockTexts)
 	return (
 		<div>
 			{blockTexts.map((blockText, index) => {
@@ -12,6 +12,16 @@ function BlockText({ blockTexts }) {
 					<Paragraph>{blockText.text}</Paragraph>
 					{blockText.image && <Image src={blockText.image} />}
 					{blockText.code && <CodeText code={blockText.code} />}
+					{blockText.list &&
+						<List header={<Paragraph strong>{blockText.list.head}</Paragraph>}
+							bordered
+							dataSource={blockText.list.item}
+							renderItem={item => (
+								<List.Item>
+									<Typography.Text >{<CaretRightOutlined />}</Typography.Text> {item}
+								</List.Item>
+							)}
+						/>}
 					<Divider />
 				</div>
 			})}
