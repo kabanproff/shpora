@@ -3,6 +3,7 @@ import { CaretRightOutlined } from '@ant-design/icons'
 import CodeText from "./CodeText";
 const { Paragraph, Title } = Typography;
 
+
 function BlockText({ blockTexts }) {
 	return (
 		<div>

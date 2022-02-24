@@ -1,7 +1,6 @@
 import React from 'react'
 import { Layout } from 'antd';
 import { Routes, Route } from "react-router-dom";
-import Component from './Component/Component';
 
 import homeData from '../Data/HomeData';
 import propsData from '../Data/PropsData';
@@ -24,7 +23,6 @@ const ContentApp = () => {
 
 				<Routes>
 					<Route path={'/'} element={<ConstructorContent textContent={homeData} />} />
-					{/* <Route path={'/component'} element={<Component />} /> */}
 					<Route path={'/component'} element={<ConstructorContent textContent={componentData} />} />
 					<Route path={'/props'} element={<ConstructorContent textContent={propsData} />} />
 					<Route path={'/state'} element={<ConstructorContent textContent={stateData} />} />
