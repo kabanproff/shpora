@@ -10,7 +10,7 @@ const HeaderApp = () => {
 	return (
 		<Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: '0 10px' }}>
 
-			<Link to={`/`}>
+			<Link to={`/shpora`}>
 				<div className="logo" >
 					<img className={'App-logo'} src={logo} alt={'App-logo'}></img>
 				</div>
