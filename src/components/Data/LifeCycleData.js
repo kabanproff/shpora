@@ -67,7 +67,7 @@ componentWillUnmount() {
 		{
 			subtitle: 'Иллюстрация жизненного цикла',
 			text: 'На приведенной ниже диаграмме из официальной документации React показаны различные методы жизненного цикла React и когда они вызываются.',
-			image: '../../image/LifeCycle.png',
+			image: 'https://i1.wp.com/programmingwithmosh.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-31-at-1.44.28-PM.png',
 		},
 	]
 }
