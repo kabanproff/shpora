@@ -22,7 +22,7 @@ const ContentApp = () => {
 			<div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
 
 				<Routes>
-					<Route path={'/'} element={<ConstructorContent textContent={homeData} />} />
+					<Route path={'/'} index element={<ConstructorContent textContent={homeData} />} />
 					<Route path={'/component'} element={<ConstructorContent textContent={componentData} />} />
 					<Route path={'/props'} element={<ConstructorContent textContent={propsData} />} />
 					<Route path={'/state'} element={<ConstructorContent textContent={stateData} />} />

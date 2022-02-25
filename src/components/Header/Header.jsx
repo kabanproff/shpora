@@ -1,7 +1,7 @@
 import logo from '../../logo.svg';
 import './Header.css'
 import { Menu, Layout } from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const { Header } = Layout;
 
 
@@ -10,7 +10,7 @@ const HeaderApp = () => {
 	return (
 		<Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: '0 10px' }}>
 
-			<Link to={'/'}>
+			<Link to={`/`}>
 				<div className="logo" >
 					<img className={'App-logo'} src={logo} alt={'App-logo'}></img>
 				</div>
