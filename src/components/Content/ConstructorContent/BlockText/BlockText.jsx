@@ -10,7 +10,9 @@ function BlockText({ blockTexts }) {
 			{blockTexts.map((blockText, index) => {
 				return <div key={index}>
 					{blockText.subtitle && <Title level={3}>{blockText.subtitle}</Title>}
-					<Paragraph>{blockText.text}</Paragraph>
+					{blockText.text &&
+						<>{blockText.text.map((i, d) => { return <Paragraph key={d}>{i}</Paragraph> })}</>
+					}
 					{blockText.image && <div className={"wrap-image"}> <Image src={blockText.image} /></div>}
 					{blockText.code && <CodeText code={blockText.code} />}
 					{blockText.list &&

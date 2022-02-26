@@ -4,7 +4,7 @@ function CodeText(p) {
 	return (
 		<div>
 			<div className={'code'}>
-				<pre>
+				<pre style={{ marginBottom: 0 }}>
 					<code>
 						{p.code}
 					</code>
