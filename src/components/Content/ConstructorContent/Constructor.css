@@ -1,3 +1,54 @@
-h1 {
+h1.ant-typography {
 	text-align: center;
+	z-index: 1;
+	line-height: 2;
+}
+div {
+	font-size: 20px;
+}
+.wrapAnimate {
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	overflow: hidden;
+	background-color: rgb(67 165 255);
+}
+.wrapAnimate .logo {
+	position: absolute;
+	top: -110px;
+}
+.wrapAnimate .App-logo {
+	width: 100%;
+	height: 300px;
+}
+.leftA .logo {
+	left: -250px;
+}
+.rightA .logo {
+	right: -250px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.rightA .App-logo {
+		animation: App-logo-reverse-spin infinite 20s linear;
+	}
+}
+@keyframes App-logo-reverse-spin {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@media (max-width: 480px) {
+	div {
+		font-size: 14px;
+	}
+}
+.wrap-image {
+	display: flex;
+	justify-content: center;
 }

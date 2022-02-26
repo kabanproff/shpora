@@ -11,7 +11,7 @@ function BlockText({ blockTexts }) {
 				return <div key={index}>
 					{blockText.subtitle && <Title level={3}>{blockText.subtitle}</Title>}
 					<Paragraph>{blockText.text}</Paragraph>
-					{blockText.image && <Image src={blockText.image} />}
+					{blockText.image && <div className={"wrap-image"}> <Image src={blockText.image} /></div>}
 					{blockText.code && <CodeText code={blockText.code} />}
 					{blockText.list &&
 						<List header={<Paragraph strong>{blockText.list.head}</Paragraph>}

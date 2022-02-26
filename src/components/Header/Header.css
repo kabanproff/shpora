@@ -1,29 +1,7 @@
-.logo {
-	float: left;
-	margin: 0 20px;
-}
-.App-logo {
-	height: 7vmin;
-	pointer-events: none;
-	margin: 0 auto;
-	object-fit: contain;
-}
-
 header ul.ant-menu-overflow {
 	justify-content: right;
 	padding-right: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+header {
+	left: 0;
 }
